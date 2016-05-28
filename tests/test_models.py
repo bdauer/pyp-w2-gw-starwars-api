@@ -11,7 +11,6 @@ class PeopleTestCase(BaseStarWarsAPITestCase):
     def test_people_model(self):
         luke = People.get(1)
         self.assertEqual(luke.name, 'Luke Skywalker')
-        self.assertEqual(luke.name, 'Luke Skywalker')
         self.assertEqual(luke.height, '172')
         self.assertEqual(luke.mass, '77')
         self.assertEqual(luke.hair_color, 'blond')
